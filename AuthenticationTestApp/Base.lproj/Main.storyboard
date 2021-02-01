@@ -22,6 +22,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="認証開始"/>
+                                <connections>
+                                    <action selector="startAuthButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLw-69-tv3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsd-yi-Mfq">
                                 <rect key="frame" x="20" y="374.5" width="374" height="29"/>
@@ -40,6 +43,10 @@
                             <constraint firstItem="nsd-yi-Mfq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p6d-XK-WEA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="nsd-yi-Mfq" id="3Zf-ji-x0o"/>
+                        <outlet property="startAuthButton" destination="cbC-Hf-jgi" id="EIC-qG-eza"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
